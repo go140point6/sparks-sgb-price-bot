@@ -262,7 +262,7 @@ async function getPrices() {
   console.log(wsb + " USD price is " + wsbUSDPrice)
   console.log(sprk + " USD price is " + sprkUSDPrice)
 
-  currentPrice = srpkUSDPrice || 0
+  currentPrice = sprkUSDPrice || 0
   let symbol = `${process.env.COIN_ID.toUpperCase()}`
   client.user.setPresence({
     activities: [{
